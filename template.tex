@@ -1,0 +1,61 @@
+\RequirePackage[l2tabu,orthodox]{nag} % Checks for incorrect or obsolete LaTeX packages
+
+\documentclass[DIV=classic,11pt,abstracton,numbers=noenddot,listof=totoc,bibliography=totoc,parskip]{scrartcl} % Uses the KOMA-Script package with customizations
+
+% Universal Fixes
+\usepackage{fixltx2e} % Corrects LaTeX2e bugs and quirks
+\usepackage{ifxetex} % Checks if XeTeX/XeLaTeX is the compiler-of-choice
+
+% Math
+\usepackage{amsmath} % Swiss-knife math package
+
+% Graphics
+\usepackage{tikz} % Engine that produces vector graphics from geometric/algebraic descriptions
+\usepackage{graphicx} % Allows inserting of graphics and images
+\usepackage{epstopdf} % Converts .eps files to .pdf for easy manipulation
+
+% Layout and Format
+\usepackage{parallel} % Aligns paragraphs across columns
+\usepackage{lineno} % Appends line-numbers in the margin with \linenumbers
+\usepackage{showkeys} % Shows label references where they are defined
+\usepackage{csquotes} % Fixes inline and display quotations
+\usepackage{paralist} % Allows inline enumeration in a paragraph and compact enums/lists
+
+% Tables and Figures
+\usepackage{booktabs} % For drawing nice tables with proper line weights
+\usepackage{flafter} % To ensure that figures float only after they are defined/referenced
+\usepackage{subfig} % Figure-ception - Allows figures within figures
+\usepackage{array}  % Extends options for column formats, alignments and layouts
+\usepackage{tabu} % Provides better control for tables and column widths
+\usepackage{longtable} % Allows tables to span across pages - integrates with tabu
+\usepackage{multicol} % Allows spanning columns in tables
+\usepackage{caption} % Allows greater customization of captions and captions outside floats
+
+% Referencing
+\usepackage[longnamesfirst]{natbib} % Reimplements \cite to work with author-year and numerical citations
+\usepackage{cleveref} % Adds semantic naming when referencing figures
+\usepackage{varioref} % Introduces referencing by page instead of figure number
+
+% Fonts and Typography
+\usepackage{microtype} % Tweaks smallish fonts and kernings
+\usepackage{textcomp} % Supports the Text Companion font, which provides additional text symbols
+\usepackage{siunitx} % Provides support for typesetting SI units
+\usepackage{ellipsis} % Fixes space uneveness around ellipses
+\usepackage{url} % Allows encapsulated URLs to break across lines
+\usepackage[colorlinks,hypertexnames=false,plainpages=false]{hyperref} % Converts \url references to valid hyperlinks in PDF documents
+\ifxetex
+\usepackage{fontspec} % Allows usage of system opentype/truetype fonts
+\setsansfont[BoldFont={* Bold}]{Miso} % Sets the Header font via system font name
+\setmainfont[BoldFont={CMU Concrete Bold Extended Roman},ItalicFont={CMU Concrete Italic},BoldItalicFont={CMU Concrete Bold Extended Italic}]{CMU Concrete Roman}% Sets the Body font via system font name
+\else
+\usepackage[T1]{fontenc} % Sets output font encoding to support accented characters and Type 1 fonts
+\usepackage{lmodern} % Swaps out ancient Computer Modern font for Latin Modern
+\fi
+
+% Title Information
+\title{}
+\author{
+\date{\small correct as of \today}
+\begin{document}
+\maketitle
+\end{document}

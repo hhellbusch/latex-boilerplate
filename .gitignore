@@ -1,3 +1,5 @@
+# LaTeX Trash
+
 *.acn
 *.acr
 *.alg
@@ -30,3 +32,20 @@
 *.vrb
 *.xdy
 *.tdo
+
+# OS-X Dotfiles
+
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# SublimeText project files
+*.sublime-workspace

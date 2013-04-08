@@ -10,7 +10,9 @@ The recommendations in this boilerplate are curated from the community knowledge
 
 ## Rationale
 
-LaTeX is a powerful typesetting tool favoured by academic communities worldwide for the versatility and beauty it provides when preparing documents. The learning curve is steep, and
+LaTeX is a powerful typesetting tool favoured by academic communities worldwide for the versatility and beauty it provides when preparing documents. The learning curve is steep, but while many eventually manage to produce a decent document, not everyone does it correctly in the way it was intended. LaTeX is largely syntax dependent, and to some extent the quality of the syntax determines the quality of the typesetting. This boilerplate encourages that. 
+
+LaTeX is also old. While LaTeX3 is in development, much of the current framework dates back to standards and work done a decade ago. Packages and fixes exist to rectify many of these problems, but are not immediately accessible to the amateur LaTeX writer. This boilerplate brings these things closer. 
 
 ## Dependencies
 
